@@ -88,7 +88,6 @@ public class Graph {
             return dijkstraPath;
         } else {
             Map<String, String> emptyPath = new HashMap<>();
-            System.out.println("Returning empty path");
             return emptyPath;
         }
     }
