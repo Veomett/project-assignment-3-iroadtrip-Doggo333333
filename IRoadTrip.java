@@ -15,7 +15,7 @@ public class IRoadTrip {
         brokenCountriesMap = brokenCountries();
 
         if (args.length != 3) {
-            System.err.println("Usage: java IRoadTrip <statenameTSV> <bordersTXT> <capdistCSV> IN THIS ORDER");
+            System.err.println(" enter files <statenameTSV> <bordersTXT> <capdistCSV> IN THIS ORDER");
             System.exit(1);
         }
         //Hard coded the files because it was not working otherwise
