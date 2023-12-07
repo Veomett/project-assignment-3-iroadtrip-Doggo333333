@@ -18,7 +18,7 @@ public class IRoadTrip {
             System.err.println(" enter files <statenameTSV> <bordersTXT> <capdistCSV> IN THIS ORDER");
             System.exit(1);
         }
-        //Hard coded the files because it was not working otherwise
+        
         String statenameTSV = args[0];
         String bordersTXT = args[1];
         String capdistCSV = args[2];
