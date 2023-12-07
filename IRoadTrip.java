@@ -13,10 +13,15 @@ public class IRoadTrip {
         graph= new Graph();
         cIDMap = new HashMap<String, String>();
         brokenCountriesMap = brokenCountries();
+
+        if (args.length != 3) {
+            System.err.println("Usage: java IRoadTrip <statenameTSV> <bordersTXT> <capdistCSV> IN THIS ORDER");
+            System.exit(1);
+        }
         //Hard coded the files because it was not working otherwise
-        String statenameTSV = "/Users/yeetusfeetus/IdeaProjects/project-assignment-3-iroadtrip-Doggo333333/state_name.tsv";
-        String bordersTXT = "/Users/yeetusfeetus/IdeaProjects/project-assignment-3-iroadtrip-Doggo333333/borders.txt";
-        String capdistCSV = "/Users/yeetusfeetus/IdeaProjects/project-assignment-3-iroadtrip-Doggo333333/capdist.csv";
+        String statenameTSV = args[0];
+        String bordersTXT = args[1];
+        String capdistCSV = args[2];
         getData(bordersTXT, statenameTSV, capdistCSV);
 
     }
